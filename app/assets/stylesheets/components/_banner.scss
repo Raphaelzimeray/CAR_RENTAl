@@ -2,6 +2,9 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  background-image: asset-url('porsche.jpeg');
+  height: 100vh;
+  width: 100vw;
 }
 
 .banner h1 {
@@ -17,4 +20,11 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.container-pages-home{
+  color:antiquewhite;
+  font-family: $body-font;
+  width: 100%;
+  text-align: center;
 }
