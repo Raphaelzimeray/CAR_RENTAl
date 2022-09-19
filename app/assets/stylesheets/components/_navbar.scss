@@ -10,3 +10,21 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.icon-f1-top{
+  width: 100px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+}
+
+.tel-and-car{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+#btn-home{
+  color:black;
+  text-decoration: none
+}

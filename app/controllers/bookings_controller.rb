@@ -31,11 +31,13 @@ class BookingsController < ApplicationController
   def update
     @booking = Booking.find(params[:id])
     @booking.update(booking_params)
+    redirect_to cars_path
   end
 
   def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
+    redirect_to cars_path
   end
 
   private

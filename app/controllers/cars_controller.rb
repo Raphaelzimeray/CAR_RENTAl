@@ -27,10 +27,12 @@ class CarsController < ApplicationController
 
   def update
     @car.update(car_params)
+    redirect_to cars_path
   end
 
   def destroy
     @car.destroy
+    redirect_to cars_path
   end
 
   private
