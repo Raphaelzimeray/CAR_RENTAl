@@ -1,0 +1,25 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+}
+
+.card-category{
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 8px;
+}
+
+.car-spec{
+  font-family: $body-font;
+  color: black;
+}
+
+.cards-and-description{
+  width: 200px;
+}
