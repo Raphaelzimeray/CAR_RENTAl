@@ -1,6 +1,8 @@
-<%= form_for(@car) do |f| %>
+<%= simple_form_for(@car) do |f| %>
   <%= f.label :brand %>
   <%= f.text_field :brand %>
+  <%= f.label :model %>
+  <%= f.text_field :model %>
   <%= f.label :year %>
   <%= f.text_field :year %>
   <%= f.label :engine %>
@@ -9,5 +11,6 @@
   <%= f.text_field :color %>
   <%= f.label :car_type %>
   <%= f.text_field :car_type %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
   <%= f.submit %>
 <% end %>

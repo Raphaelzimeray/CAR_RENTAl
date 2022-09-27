@@ -1,8 +1,13 @@
 <h1> <%= @car.brand %> </h1>
+<p> <%= @car.model %></p>
 <p> <%= @car.year %></p>
 <p> <%= @car.engine %></p>
 <p> <%= @car.color %></p>
 <p> <%= @car.car_type %></p>
+ <p><%= link_to "Supprimer cette voiture #{@car.brand}",
+            car_path(@car),
+            method: :delete,
+            data: { confirm: "Are you sure?"} %></p>
 <% @car.photos.each do |photo| %>
   <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>

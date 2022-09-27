@@ -3,23 +3,28 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   flex-wrap: wrap;
-  display: flex;
   margin: auto;
 }
 
 .card-category{
-  width: 400px;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-position: center;
-  margin: 8px;
+  margin-bottom: 15px;
 }
 
 .car-spec{
   font-family: $body-font;
   color: black;
+  width: 100%;
+
 }
 
 .cards-and-description{
-  width: 200px;
+  width: 400px;
+}
+
+.link-index{
+  text-decoration: none;
 }
