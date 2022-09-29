@@ -91,6 +91,8 @@ porsche356 = Car.new(
 
 file = URI.open('https://www.classicnumber.com/images/stories/expautos/images/big/87898_1655304289_faa371a6.jpg')
 porsche356.photos.attach(io: file, filename:'356/jpg', content_type: '356/jpg')
+file = URI.open('https://files.porsche.com/filestore/image/multimedia/none/rd-2014-porscheclassic-models-356-a-banner/normal/4e0c1211-7bdb-11e4-bbba-001a64c55f5c/porsche-normal.jpg')
+porsche356.photos.attach(io: file, filename: '356C/jpeg', content_type: '356C/jpeg')
 porsche356.save!
 
 puts "#{porsche356.brand} has been created"
