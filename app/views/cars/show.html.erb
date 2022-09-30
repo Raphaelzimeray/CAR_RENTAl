@@ -5,10 +5,10 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-          <div class="img-show carousel-inner ">
+          <div class="img-show carousel-inner w-100 ">
               <% @car.photos.each_with_index do |photo, index| %>
                 <div class="carousel-item <%= "active" if index.zero? %>">
-                  <%= cl_image_tag photo.key, crop: :fill, class:"d-block w-100 image-caroussel" %>
+                  <%= cl_image_tag photo.key, crop: :fill, class:"d-block image-caroussel" %>
                 </div>
               <% end %>
           </div>
@@ -21,17 +21,31 @@
               <span class="visually-hidden">Next</span>
             </button>
     </div>
-  <div class="specifications">
-    <h1> Brand: <%= @car.brand %> </h1>
-    <h1>Model: <%= @car.model %> </h1>
-    <h3>Year: <%= @car.year %> </h3>
-    <h3>Engine: <%= @car.engine %> </h3>
-    <h4>Color: <%= @car.color %> </h4>
-    <h4>Type: <%= @car.car_type %></h4>
-    <p><%= link_to "Supprimer cette voiture",
-                car_path(@car),
-                method: :delete,
-                data: { confirm: "Are you sure?"}, class: 'link-index' %></p>
-    </div>
 
+  <div class="spec-and-booking-card">
+    <div class="specifications">
+      <h1> Brand:  <strong><%= @car.brand %> </h1> </strong>
+      <h1>Model: <strong><%= @car.model %> </h1> </strong>
+      <h3>Year: <strong><%= @car.year %> </h3> </strong>
+      <h3>Engine: <strong><%= @car.engine %> </h3></strong>
+      <h4>Color: <strong> <%= @car.color %> </h4> </strong>
+      <h4>Type: <strong><%= @car.car_type %></h4></strong>
+      <p><%= link_to "Supprimer cette voiture",
+                  car_path(@car),
+                  method: :delete,
+                  data: { confirm: "Are you sure?"}, class: 'link-index' %></p>
+      </div>
+
+
+
+  <div class="booking">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Reservez votre véhicule</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Paiement sécurisé</h6>
+        <p class="card-text"> Ce véhicule vous intéresse? Cliquez sur le lien ci dessous pour procéder à la réservation!</p>
+        <%= link_to "Reservation", new_car_booking_path(@car), class: "btn btn-dark" %>
+      </div>
+    </div>
+  </div>
 </div>

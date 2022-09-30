@@ -11,6 +11,8 @@ require 'faker'
 
 puts "Cleaning database"
 
+Booking.destroy_all
+
 Car.destroy_all
 
 puts 'Creating 10 cars...'
@@ -37,6 +39,8 @@ audirs6 = Car.new(
 )
 file = URI.open('https://sport-auto.ch/essais/wp-content/uploads/2020/09/Audi-RS6-C8-112.jpg')
 audirs6.photos.attach(io: file, filename: 'audi.jpg', content_type: 'audi/jpg')
+file = URI.open('https://i.gaw.to/content/photos/38/89/388916_2020_Audi_A6.jpg')
+audirs6.photos.attach(io: file, filename: 'audi.jpeg', content_type: 'audi/jpeg')
 audirs6.save!
 puts "#{audirs6.brand} has been created"
 
