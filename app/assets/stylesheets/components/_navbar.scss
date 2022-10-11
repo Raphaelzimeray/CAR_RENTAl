@@ -1,5 +1,6 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.navbar{
+  display: flex;
+  justify-content: space-around;
   background: white;
 }
 
@@ -27,4 +28,13 @@
 #btn-home{
   color:black;
   text-decoration: none
+}
+
+.availible-cars{
+  color:black;
+  text-decoration: none;
+}
+
+#phone-number{
+  border: 1px solid;
 }
