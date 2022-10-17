@@ -1,4 +1,29 @@
 <h1> Nouvelle réservation</h1>
+<div class="booking-new">
+    <div class="card">
+        <% @car.photos.each_with_index do |photo, index| %>
+          <div class="booking-photo">
+            <%= cl_image_tag photo.key %>
+          </div>
+        <% end %>
+        <div class="car-booking-spec">
+          <strong>
+            <h2> Brand: <%= @car.brand %> </h2>
+          </strong>
+            <h4> Model: <%= @car.model %> </h4>
+        </div>
+        <div class="booking-sum-up-and-price">
+          <strong>
+            <h2> Récapitulatif de votre commande:</h2>
+          </strong>
+        </div>
+        <div class="date-et-lieu-de-la-livraison">
+          <strong>
+            <h2>Date de livraison prévue</h2>
+          </strong>
+        </div>
+    </div>
+</div>
 
 <%= form_for([@car, @booking]) do |f| %>
   <%= f.label :date %>
