@@ -30,6 +30,7 @@
       <h3>Engine: <strong><%= @car.engine %> </h3></strong>
       <h4>Color: <strong> <%= @car.color %> </h4> </strong>
       <h4>Type: <strong><%= @car.car_type %></h4></strong>
+      <h4> Price: <strong> <%= @car.price %></strong></h4>
       <p><%= link_to "Supprimer cette voiture",
                   car_path(@car),
                   method: :delete,

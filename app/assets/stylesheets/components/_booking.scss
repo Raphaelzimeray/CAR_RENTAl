@@ -1,6 +1,8 @@
 .booking-new{
-  height: 300px;
-
+  border: 1px solid;
+  border-radius: 8px;
+  height: 220px;
+  padding-top: 25px;
 }
 
 .booking-photo{
@@ -11,4 +13,8 @@
 .flex-container{
   display: flex;
   justify-content: space-around;
+}
+
+.booking{
+  margin: 20px;
 }
