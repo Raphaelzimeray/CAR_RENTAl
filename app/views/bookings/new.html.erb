@@ -1,10 +1,8 @@
 <h1> Nouvelle réservation</h1>
 <div class="booking-new">
-    <div class="card">
+    <div class="flex-container">
         <% @car.photos.each_with_index do |photo, index| %>
-          <div class="booking-photo">
-            <%= cl_image_tag photo.key %>
-          </div>
+            <%= cl_image_tag photo.key, class: "booking-photo" %>
         <% end %>
         <div class="car-booking-spec">
           <strong>
