@@ -28,6 +28,10 @@ price: "25000"
 )
 file = URI.open('https://cdn.motor1.com/images/mgl/xMXjw/s1/volvo-v40.webp')
 volvov40.photos.attach(io: file, filename: 'volvo.webp', content_type: 'image/webp')
+file = URI.open('https://meilleuroccas.fr/wp-content/uploads/2022/04/DSC00464.jpg')
+volvov40.photos.attach(io: file, filename: 'volvo.jpg', content_type: 'volvo/jpg')
+file = URI.open('https://eden-boites.com/blog/wp-content/uploads/2021/01/boite-vitesse-volvo-v40-occasion.jpg')
+volvov40.photos.attach(io: file, filename: 'volvov40.jpg', content_type: 'volvov40.jpg')
 volvov40.save!
 puts"#{volvov40.brand} has been created"
 
@@ -45,6 +49,8 @@ file = URI.open('https://sport-auto.ch/essais/wp-content/uploads/2020/09/Audi-RS
 audirs6.photos.attach(io: file, filename: 'audi.jpg', content_type: 'audi/jpg')
 file = URI.open('https://i.gaw.to/content/photos/38/89/388916_2020_Audi_A6.jpg')
 audirs6.photos.attach(io: file, filename: 'audi.jpeg', content_type: 'audi/jpeg')
+file = URI.open('https://www.annonces-automobile.com/images/data/actualite/2021/04/images/Audi-RS6-avant5.jpg')
+audirs6.photos.attach(io: file, filename: 'audirs6.jpg', content_type: 'audirs6/jpg')
 audirs6.save!
 puts "#{audirs6.brand} has been created"
 
