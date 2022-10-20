@@ -66,6 +66,10 @@ mercedesslk = Car.new(
 )
 file = URI.open('https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_fd7fbf0f2c434f0df8532523522ece8a.jpg')
 mercedesslk.photos.attach(io: file, filename: 'classic-trader.jpg', content_type: 'classic-trader/jpg')
+file = URI.open('https://www.speedfans.fr/wp-content/uploads/2015/01/Mercedes-Benz-SLK_55_AMG_tableau.jpg')
+mercedesslk.photos.attach(io: file, filename: 'Mercedes-Benz-SLK_55_AMG_tableau.jpg', content_type: 'Mercedes-Benz-SLK_55_AMG_tableau/jpg')
+file = URI.open('https://www.supercars.net/blog/wp-content/uploads/2016/04/2004_MercedesBenz_SLK55AMG3.jpg')
+mercedesslk.photos.attach(io: file, filename: '2004_MercedesBenz_SLK55AMG3.jpg', content_type: '2004_MercedesBenz_SLK55AMG3/jpg')
 mercedesslk.save!
 puts "#{mercedesslk.brand} has been created"
 
@@ -81,6 +85,12 @@ fordgt = Car.new(
 )
 file = URI.open('https://www.topcarrating.com/ford/2004-ford-gt.jpg')
 fordgt.photos.attach(io: file, filename: 'ford-gt.jpg', content_type: 'ford-gt/jpg')
+file = URI.open('https://www.philippelague.com/wp-content/uploads/2016/07/Ford-GT-2006-06.jpg')
+fordgt.photos.attach(io: file, filename: 'Ford-GT-2006-06.jpg', content_type: 'Ford-GT-2006-06/jpg')
+file = URI.open('https://medias.motorsdb.com/archives/2019/06/16/Ford-GT-Tungsten-2006-89426.jpg')
+fordgt.photos.attach(io: file, filename: 'Ford-GT-Tungsten-2006-89426.jpg', content_type: 'Ford-GT-Tungsten-2006-89426/jpg')
+file = URI.open('https://www.super-hobby.fr/zdjecia/9/7/5/17171_1-auto_downl.jpg')
+fordgt.photos.attach(io: file, filename: '17171_1-auto_downl.jpg', content_type: '17171_1-auto_downl/jpg')
 fordgt.save!
 puts "#{fordgt.brand} has been created"
 
@@ -97,6 +107,10 @@ renaultclio2rs = Car.new(
 
 file = URI.open('https://storage.googleapis.com/benzin/lead/original/img_5dc43bc4ad3c1.jpg')
 renaultclio2rs.photos.attach(io: file, filename: '2rs/jpg', content_type: '2rs/jpg')
+file = URI.open('https://images.caradisiac.com/logos-ref/modele/modele--renault-clio-2-rs/S0-modele--renault-clio-2-rs.jpg')
+renaultclio2rs.photos.attach(io: file, filename: 'S0-modele--renault-clio-2-rs.jpg', content_type: 'S0-modele--renault-clio-2-rs/jpg')
+file = URI.open('https://storage.googleapis.com/benzin/lead/original/img_5d5fc9404fbb4.jpg')
+renaultclio2rs.photos.attach(io: file, filename: 'img_5d5fc9404fbb4.jpg', content_type: 'img_5d5fc9404fbb4/jpg')
 renaultclio2rs.save!
 puts "#{renaultclio2rs.brand} has been created"
 
