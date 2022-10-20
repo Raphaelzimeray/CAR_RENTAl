@@ -12,17 +12,20 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .car-spec{
   font-family: $body-font;
   color: black;
   width: 100%;
-
+  margin: 10px;
 }
 
 .cards-and-description{
   width: 400px;
+  border: 1px solid;
+  border-radius: 8px;
 }
 
 .link-index{
@@ -37,4 +40,8 @@
 
 #carouselExampleIndicators{
   width: 100%;
+}
+
+.title{
+  margin-top: 15px;
 }
