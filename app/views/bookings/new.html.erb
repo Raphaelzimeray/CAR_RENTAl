@@ -1,33 +1,33 @@
-<div class="booking">
-  <h1> Nouvelle réservation</h1>
-    <div class="booking-new">
-        <div class="flex-container">
-            <% @car.photos.each_with_index do |photo, index| %>
-                <%= cl_image_tag photo.key, class: "booking-photo" %>
-            <% end %>
-            <div class="car-booking-spec">
-              <strong>
-                <h4> Brand: <%= @car.brand %> </h4>
-              </strong>
-                <h6> Model: <%= @car.model %> </h6>
-            </div>
-            <div class="booking-sum-up-and-price">
-              <strong>
-                <h6> Récapitulatif de votre commande:</h6>
-                <h6>Prix: <%= @car.price %></h6>
-              </strong>
-            </div>
-            <div class="date-et-lieu-de-la-livraison">
-              <strong>
-                <h6>Date de livraison prévue</h6>
-              </strong>
-            </div>
-        </div>
-    </div>
-</div>
-
-<%= form_for([@car, @booking]) do |f| %>
+<div class="container">
+  <div class="booking">
+    <h1 class="nouvelle-reservation"> Nouvelle réservation</h1>
+      <div class="booking-new">
+          <div class="flex-container">
+              <%= cl_image_tag @car.photos.first.key, class: "booking-photo" %>
+              <div class="car-booking-spec">
+                <strong>
+                  <h4> Brand: <%= @car.brand %> </h4>
+                </strong>
+                  <h6> Model: <%= @car.model %> </h6>
+              </div>
+              <div class="booking-sum-up-and-price">
+                <strong>
+                  <h6> Récapitulatif de votre commande:</h6>
+                  <h6>Prix: <%= @car.price %></h6>
+                </strong>
+              </div>
+              <div class="date-et-lieu-de-la-livraison">
+                <strong>
+                  <h6>Date de livraison prévue</h6>
+                </strong>
+              </div>
+          </div>
+      </div>
+  </div>
+  <%= form_for([@car, @booking]) do |f| %>
   <%= f.label :date %>
   <%= f.text_field :date %>
   <%= f.submit %>
-<% end %>
+  <% end %>
+
+</div>

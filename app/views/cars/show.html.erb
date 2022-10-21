@@ -35,18 +35,18 @@
                   car_path(@car),
                   method: :delete,
                   data: { confirm: "Are you sure?"}, class: 'link-index' %></p>
-      </div>
-
-
-
-  <div class="booking">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Reservez votre véhicule</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Paiement sécurisé</h6>
-        <p class="card-text"> Ce véhicule vous intéresse? Cliquez sur le lien ci dessous pour procéder à la réservation!</p>
-        <%= link_to "Reservation", new_car_booking_path(@car), class: "btn btn-dark" %>
-      </div>
     </div>
-  </div>
+
+
+
+    <div class="booking-car">
+         <strong>
+            <h3 class="reserver-h3">Reservez votre véhicule</h3>
+         </strong>
+          <br>
+          <br>
+          <h4 class="paiement-securise">Paiement sécurisé</h4>
+          <p class="ce-vh-vous-interesse"> Ce véhicule vous intéresse? Cliquez sur le lien ci dessous pour procéder à la réservation!</p>
+          <p> <%= link_to "Reservation", new_car_booking_path(@car), class: "btn btn-dark" %> </p>
+    </div>
 </div>

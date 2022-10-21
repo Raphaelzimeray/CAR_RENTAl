@@ -28,6 +28,10 @@ price: "25000"
 )
 file = URI.open('https://cdn.motor1.com/images/mgl/xMXjw/s1/volvo-v40.webp')
 volvov40.photos.attach(io: file, filename: 'volvo.webp', content_type: 'image/webp')
+file = URI.open('https://meilleuroccas.fr/wp-content/uploads/2022/04/DSC00464.jpg')
+volvov40.photos.attach(io: file, filename: 'volvo.jpg', content_type: 'volvo/jpg')
+file = URI.open('https://eden-boites.com/blog/wp-content/uploads/2021/01/boite-vitesse-volvo-v40-occasion.jpg')
+volvov40.photos.attach(io: file, filename: 'volvov40.jpg', content_type: 'volvov40.jpg')
 volvov40.save!
 puts"#{volvov40.brand} has been created"
 
@@ -45,6 +49,8 @@ file = URI.open('https://sport-auto.ch/essais/wp-content/uploads/2020/09/Audi-RS
 audirs6.photos.attach(io: file, filename: 'audi.jpg', content_type: 'audi/jpg')
 file = URI.open('https://i.gaw.to/content/photos/38/89/388916_2020_Audi_A6.jpg')
 audirs6.photos.attach(io: file, filename: 'audi.jpeg', content_type: 'audi/jpeg')
+file = URI.open('https://www.annonces-automobile.com/images/data/actualite/2021/04/images/Audi-RS6-avant5.jpg')
+audirs6.photos.attach(io: file, filename: 'audirs6.jpg', content_type: 'audirs6/jpg')
 audirs6.save!
 puts "#{audirs6.brand} has been created"
 
@@ -60,6 +66,10 @@ mercedesslk = Car.new(
 )
 file = URI.open('https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_fd7fbf0f2c434f0df8532523522ece8a.jpg')
 mercedesslk.photos.attach(io: file, filename: 'classic-trader.jpg', content_type: 'classic-trader/jpg')
+file = URI.open('https://www.speedfans.fr/wp-content/uploads/2015/01/Mercedes-Benz-SLK_55_AMG_tableau.jpg')
+mercedesslk.photos.attach(io: file, filename: 'Mercedes-Benz-SLK_55_AMG_tableau.jpg', content_type: 'Mercedes-Benz-SLK_55_AMG_tableau/jpg')
+file = URI.open('https://www.supercars.net/blog/wp-content/uploads/2016/04/2004_MercedesBenz_SLK55AMG3.jpg')
+mercedesslk.photos.attach(io: file, filename: '2004_MercedesBenz_SLK55AMG3.jpg', content_type: '2004_MercedesBenz_SLK55AMG3/jpg')
 mercedesslk.save!
 puts "#{mercedesslk.brand} has been created"
 
@@ -75,6 +85,12 @@ fordgt = Car.new(
 )
 file = URI.open('https://www.topcarrating.com/ford/2004-ford-gt.jpg')
 fordgt.photos.attach(io: file, filename: 'ford-gt.jpg', content_type: 'ford-gt/jpg')
+file = URI.open('https://www.philippelague.com/wp-content/uploads/2016/07/Ford-GT-2006-06.jpg')
+fordgt.photos.attach(io: file, filename: 'Ford-GT-2006-06.jpg', content_type: 'Ford-GT-2006-06/jpg')
+file = URI.open('https://medias.motorsdb.com/archives/2019/06/16/Ford-GT-Tungsten-2006-89426.jpg')
+fordgt.photos.attach(io: file, filename: 'Ford-GT-Tungsten-2006-89426.jpg', content_type: 'Ford-GT-Tungsten-2006-89426/jpg')
+file = URI.open('https://www.super-hobby.fr/zdjecia/9/7/5/17171_1-auto_downl.jpg')
+fordgt.photos.attach(io: file, filename: '17171_1-auto_downl.jpg', content_type: '17171_1-auto_downl/jpg')
 fordgt.save!
 puts "#{fordgt.brand} has been created"
 
@@ -91,6 +107,10 @@ renaultclio2rs = Car.new(
 
 file = URI.open('https://storage.googleapis.com/benzin/lead/original/img_5dc43bc4ad3c1.jpg')
 renaultclio2rs.photos.attach(io: file, filename: '2rs/jpg', content_type: '2rs/jpg')
+file = URI.open('https://images.caradisiac.com/logos-ref/modele/modele--renault-clio-2-rs/S0-modele--renault-clio-2-rs.jpg')
+renaultclio2rs.photos.attach(io: file, filename: 'S0-modele--renault-clio-2-rs.jpg', content_type: 'S0-modele--renault-clio-2-rs/jpg')
+file = URI.open('https://storage.googleapis.com/benzin/lead/original/img_5d5fc9404fbb4.jpg')
+renaultclio2rs.photos.attach(io: file, filename: 'img_5d5fc9404fbb4.jpg', content_type: 'img_5d5fc9404fbb4/jpg')
 renaultclio2rs.save!
 puts "#{renaultclio2rs.brand} has been created"
 
