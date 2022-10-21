@@ -11,10 +11,15 @@
               </div>
               <div class="booking-sum-up-and-price">
                 <strong>
-                  <h6> Récapitulatif de votre commande:</h6>
-                  <h6>Prix: <%= @car.price %>€/jour</h6>
+                  <h4> Récapitulatif de votre commande:</h4>
+                  <h6>Prix par jour: <%= @car.price %>€/jour</h6>
                 </strong>
+                <h6> Vous avez loué le véhicule pour: <%= (@booking.end_date - @booking.start_date).to_i %> jours! </h6>
+                <h6> Prix total de la réservation: <%= (@booking.end_date - @booking.start_date).to_i * @car.price %> euros</h6>
               </div>
           </div>
+      </div>
+      <div class="retourner-sur-index-booking">
+        <h5> Retrouvez l'ensemble de vos réservations: <%= link_to 'Réservations', bookings_path(@booking)%></h5>
       </div>
 </div>
