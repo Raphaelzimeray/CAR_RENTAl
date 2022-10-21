@@ -1,1 +1,25 @@
+.card-product-bookings {
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 274px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
 
+.card-product-bookings img {
+  height: 100%;
+  object-fit: cover;
+  justify-content: flex-start;
+  margin-left: -12px;
+  height: 220px;
+}
+
+.reservations-index-voici{
+  margin-bottom: 30px;
+}

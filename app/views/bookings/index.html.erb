@@ -1,10 +1,10 @@
 <div class="container">
 
-  <h1> Voici vos réservation</h1>
+  <h1 class="reservations-index-voici"> Voici vos réservation</h1>
 
     <% @bookings.each do |booking| %>
       <div class="card-product-bookings">
-        <%= image_tag(booking.car.photos.first) %>
+        <%= image_tag(booking.car.photos.first, class: "index-booking-photo")%>
         <div class="card-product-infos mb-8">
           <h2> <%= booking.car.brand %></h2>
           <h5> <%= booking.car.model %></h5>
