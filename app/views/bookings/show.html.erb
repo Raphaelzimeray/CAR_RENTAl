@@ -1,3 +1,20 @@
 <div class="container">
   <h1 class="votre-reservation">Votre réservation</h1>
+    <div class="booking-show">
+          <div class="flex-container">
+              <%= cl_image_tag @car.photos.first.key, class: "booking-photo" %>
+              <div class="car-booking-spec-show">
+                <strong>
+                  <h4> Brand: <%= @car.brand %> </h4>
+                </strong>
+                  <h6> Model: <%= @car.model %> </h6>
+              </div>
+              <div class="booking-sum-up-and-price">
+                <strong>
+                  <h6> Récapitulatif de votre commande:</h6>
+                  <h6>Prix: <%= @car.price %>€/jour</h6>
+                </strong>
+              </div>
+          </div>
+      </div>
 </div>
