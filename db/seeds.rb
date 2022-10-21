@@ -24,7 +24,7 @@ color: "grey",
 car_type: "Break",
 model: "v40",
 address: "7 rue beaujon, Paris",
-price: "25000"
+price: 25
 )
 file = URI.open('https://cdn.motor1.com/images/mgl/xMXjw/s1/volvo-v40.webp')
 volvov40.photos.attach(io: file, filename: 'volvo.webp', content_type: 'image/webp')
@@ -43,7 +43,7 @@ audirs6 = Car.new(
   car_type: "Break",
   model: "RS6",
   address: "42 rue de l'eglise, Paris",
-  price: "150000"
+  price: 150
 )
 file = URI.open('https://sport-auto.ch/essais/wp-content/uploads/2020/09/Audi-RS6-C8-112.jpg')
 audirs6.photos.attach(io: file, filename: 'audi.jpg', content_type: 'audi/jpg')
@@ -62,7 +62,7 @@ mercedesslk = Car.new(
   car_type: "Roadster",
   model: "SLK",
   address: "57 rue des Belles feuilles, Paris",
-  price: "45000"
+  price: 120
 )
 file = URI.open('https://cdn.classic-trader.com/I/images/1920_1920_inset/vehicle_ad_standard_image_fd7fbf0f2c434f0df8532523522ece8a.jpg')
 mercedesslk.photos.attach(io: file, filename: 'classic-trader.jpg', content_type: 'classic-trader/jpg')
@@ -81,7 +81,7 @@ fordgt = Car.new(
   car_type: "Supercar",
   model: "GT",
   address: "9 rue Nicolo, Paris",
-  price: "500000"
+  price: 450
 )
 file = URI.open('https://www.topcarrating.com/ford/2004-ford-gt.jpg')
 fordgt.photos.attach(io: file, filename: 'ford-gt.jpg', content_type: 'ford-gt/jpg')
@@ -102,7 +102,7 @@ renaultclio2rs = Car.new(
   car_type: "City sports car",
   model: "2RS",
   address: "620 chemin de rabiac estagnol, Antibes",
-  price: "14000"
+  price: 100
 )
 
 file = URI.open('https://storage.googleapis.com/benzin/lead/original/img_5dc43bc4ad3c1.jpg')
@@ -122,7 +122,7 @@ porsche356 = Car.new(
   car_type: "Oldtimer",
   model: "356",
   address: "82 avenue de villiers, Paris",
-  price: "300000"
+  price: 300
 )
 
 file = URI.open('https://www.classicnumber.com/images/stories/expautos/images/big/87898_1655304289_faa371a6.jpg')
@@ -141,7 +141,7 @@ astonmartinAMR = Car.new(
   car_type: "GT",
   model: "Vantage AMR",
   address: "19 rue du docteur blanche, Paris",
-  price: "250000"
+  price: 280
 )
 file = URI.open('https://www.topgear.com/sites/default/files/images/cars-road-test/2019/10/e503f0a435284e30a5a9552986f4a075/aston-martin-vantage-amr-59-edition-photo-max-earey-122lead.jpg')
 astonmartinAMR.photos.attach(io: file, filename: 'aston/jpg', content_type: 'aston/jpg')
@@ -157,7 +157,7 @@ porsche959 = Car.new(
   car_type: "Hypercar",
   model: "959",
   address: "5 rue albert gos, Genève",
-  price: "1500000"
+  price: 550
 )
 
 file = URI.open('https://i.gaw.to/content/photos/51/24/512482-2-7-millions-de-pour-cette-rarissime-porsche-959.jpg')
@@ -172,7 +172,7 @@ fordmustang = Car.new(
   car_type: "Sportcar",
   model: "Mustang",
   address: "24 avenue peschier, Genève",
-  price: "60000"
+  price: 400
 )
 
 file = URI.open('https://www.421chevaux.com/wp-content/uploads/2020/08/2007-Ford-Mustang-Shelby-GT500-I-AM-LEGEND-01.jpg')
@@ -189,7 +189,7 @@ dodgechallengerstr = Car.new(
   car_type: "Muscle car",
   model: "Challenger SRT",
   address: "7 rue saint dominique, Paris",
-  price: "60000"
+  price: 370
 )
 
 file = URI.open('https://i.gaw.to/content/photos/43/19/431944-dodge-challenger-super-stock-2021-une-bombe-de-807-chevaux.jpeg')
@@ -206,7 +206,7 @@ buggatimistral = Car.new(
   car_type: "Hypercar",
   model: "Mistral",
   address: "9 rue beaujon, Paris",
-  price: "9000000"
+  price: 1000
 )
 
 file = URI.open('https://cdn.motor1.com/images/mgl/Kbbey1/s1/bugatti-mistral-convertible-at-the-quail.jpg')
@@ -224,7 +224,7 @@ audir8 = Car.new(
   car_type: "Supercar",
   model: "R8",
   address: "19 rue du docteur blanche, Paris",
-  price: "100000"
+  price: 380
 )
 
 file = URI.open('https://mediaservice.audi.com/media/fast/H4sIAAAAAAAAAFvzloG1tIiBOTrayfuvpGh6-m1zJgaGigIGBgZGoDhTtNOaz-I_2DhCHkCFmXgZWMpTkwoYgSrcmLgycxPTU_VBArz____nZ-QustBNrSjRzUvNzWcHKhHgiZsfe9Uw6_id7Q-9vswPcnnBfueZOAOP5I12FrNLew-2znNlmMC35scXWVYfBp6sOCv-BSx1_1-L8JvPuG68K8hVvoiBh9f49pwf_1hm6n1-qKV63_sZxwY3bQYezxPHYsp277nnoB_xbvbVd-4HDeMKGHjOfpJ78NA382i2s5E869KwRwk889oYeI4tVH7z_F72DJtF-Qyn-Zb8-_DsL9C2U3Zr9xaarlIs19_0YptWY2VnyZfZQFGn2VdPC576LXf72XaNeWvun2CJEmLgaVeQrJC78Mcr4c3FV592vmfuWfwE6AaX0tKrLV_uxe3h3_X9xueD1UtMQjYx8LTFiJeLlJoLxhTfSn_XvsyMQ4w5g4FnZfoxJdUTV-Qqpri3zlOTFVr86qQ3A4_s8c5DK7qYXwRGnX101vHM8sWfKgwZeF5PrfVbU6byMkZor4yFq1WpXXTmbgaezqvuL1OCY2bySPNkebybPC-Gaek5BlZgRDDtBhIscUCC5wmQ4LBhAJOgKNoAJBgXgvis9cwMDNwODAxsIQwgwCdcWpRTkFiUmKtXlFpckJ9XnFmWKqhhQCQQZvVxjHQNAgCPZrHmQAIAAA?mimetype=image/png')

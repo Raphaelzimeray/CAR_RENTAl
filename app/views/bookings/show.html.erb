@@ -1,3 +1,25 @@
 <div class="container">
   <h1 class="votre-reservation">Votre réservation</h1>
+    <div class="booking-show">
+          <div class="flex-container">
+              <%= cl_image_tag @car.photos.first.key, class: "booking-photo" %>
+              <div class="car-booking-spec-show">
+                <strong>
+                  <h4> Brand: <%= @car.brand %> </h4>
+                </strong>
+                  <h6> Model: <%= @car.model %> </h6>
+              </div>
+              <div class="booking-sum-up-and-price">
+                <strong>
+                  <h4> Récapitulatif de votre commande:</h4>
+                  <h6>Prix par jour: <%= @car.price %>€/jour</h6>
+                </strong>
+                <h6> Vous avez loué le véhicule pour: <%= (@booking.end_date - @booking.start_date).to_i %> jours! </h6>
+                <h6> Prix total de la réservation: <%= (@booking.end_date - @booking.start_date).to_i * @car.price %> euros</h6>
+              </div>
+          </div>
+      </div>
+      <div class="retourner-sur-index-booking">
+        <h5> Retrouvez l'ensemble de vos réservations: <%= link_to 'Réservations', bookings_path(@booking)%></h5>
+      </div>
 </div>
