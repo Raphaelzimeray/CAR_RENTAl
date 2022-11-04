@@ -28,6 +28,7 @@ class CarsController < ApplicationController
       if @car.save
         redirect_to car_path(@car)
       else
+
         render :new
       end
   end
@@ -50,6 +51,6 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:brand, :year, :engine, :color, :type, photos: [])
+    params.require(:car).permit(:brand, :price, :address, :car_type, :model, :year, :engine, :color, :type, photos: [])
   end
 end
